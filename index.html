@@ -1,0 +1,175 @@
+<html>
+
+<title>Asteroids</title>
+
+<!-- JS -->
+<script src='scripts/jquery.min.js'></script>
+<script src='scripts/page.js'></script>
+
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="style/index.css">
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+<!-- HTML -->
+<body>
+  <div class='outer-container'>
+      
+      
+      
+      <div class='game-window'>
+        
+        <!-- Main Menu -->
+        <div id = "landing-page">
+          
+          <div id = "landing-header">
+            <img src="./src/asteroid.png">
+            Asteroids
+            <img src="./src/asteroid.png">
+          </div>
+          
+          <div>
+            <button onclick="landingPagePlay()">Play game!</button>
+          </div>
+          <div>
+            <button onclick="clickSettings()">Settings</button>
+          </div>
+
+
+
+        </div>
+
+
+        
+        <!-- Settings -->
+        <div id = "settings">
+          <div>
+            Settings
+          </div>
+
+          <div class="slidecontainer">
+            <p>Volume: <span id="demo"></span></p>
+            <input type="range" min="1" max="100" value="50" class="slider" id="mySlider">    
+          </div>
+
+          <div id = "difficulty">
+
+            <div>
+              Difficulty
+            </div>
+            <br>
+            <div>
+            <button id = "easyButton" onclick="easy()"> Easy </button>
+            <button id = "normalButton" onclick="normal()"> Normal </button>
+            <button id = "hardButton" onclick="hard()">Hard</button>
+           </div>
+          </div>
+
+
+          <div id = "close">
+            <button id = "close-button" onclick="closeSettings()" >Close</button>
+          </div>
+
+
+
+
+
+        </div>
+        <!-- Tutorial -->
+        <div id="tutorial">
+          <div id = "HTP">
+            <strong>How to play</strong>
+          </div>
+          <div id="avoidAst">
+            <div><strong>Avoid</strong> <em>asteroids!</em></div>
+            <br>
+            <img id="tutor-ast" src="./src/asteroid.png">
+          </div>
+          <div id="tutor-shield">
+            <div><strong>Collect</strong> <em>shields!</em> <strong>Travel</strong> <em>through portals to the next level!</em></div>
+            <br>
+            <img src="./src/shield.gif">
+            <img src="./src/port.gif">
+            <div><strong>Gain</strong> <em>as many points as possible!</em></div>
+    
+          </div>
+
+          <div id = "tutor-button">
+            <button onclick="StartGame()">Start</button>
+          </div>
+
+
+        </div>
+
+        
+
+        <!-- Actual Game -->
+        <div id="actual_game">
+          
+          <!-- Get Ready Page -->
+          <div id="getReadyPage">
+            <div id="getReadyContainer">
+            <div id = "getReady"><strong>Get Ready!</strong></div>
+            <br>
+            <div><img src="./src/arrowkeys.png" id = "arrowKey"></div>
+            <br>
+            <div id="useArrowWords">Use arrow Keys to move.</div>
+          </div>
+          </div>
+
+
+
+          <div id="player">
+            <img id = "playerImg" src="./src/player/player.gif">
+          </div>
+          <div class="asteroidSection">
+              <div class="curAstroid"> </div>
+          </div>
+
+          <!-- portal -->
+
+
+          <div id="game_right_section">
+              <div id="scoreword">
+                  SCORE
+                  <div id="score_num"></div>
+              </div>
+              <div id="danger">DANGER
+              <div id="danger_num"></div></div>
+              <div id="level">LEVEL
+              <div id="level_num"></div></div>
+          </div>
+        </div>    
+      </div> <!-- end game-window -->
+      
+      <div id = "endPage">
+          
+        <div id = "endHeader">
+          <img src="./src/asteroid.png">
+          Asteroids
+          <img src="./src/asteroid.png">
+        </div>
+        
+        <div id="endPageContainer">
+          <br>
+         <div>GAME OVER!</div>
+         <br>
+         <div>YOU HAVE TO FIX YOUR SPACESHIP!</div>
+         <br>
+         <div id = "finalScore"></div>
+         
+          <button id = "endPageButton" onclick="startOver()">Start Over</button>
+         
+        </div>
+       
+
+
+      </div>
+
+      
+      
+  </div> <!-- end outer-container -->
+  
+  
+</body>
+
+</html>

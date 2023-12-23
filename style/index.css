@@ -1,0 +1,364 @@
+/* Main Containers */
+body, button {
+  font-family: VT323;
+}
+button {
+  font-size: xx-large;
+}
+
+.outer-container {
+  height: 720px;
+  width: 1280px;
+  background: #eee;
+  border: 5px solid gainsboro;
+}
+
+.game-window {
+  height: 720px;
+  width: 1280px;
+  float: left;
+  position: relative;
+}
+  
+/* Game Section --- Right Section */
+
+#actual_game{
+    height: 720px;
+    width: 1280px;
+    background-color: white;
+    z-index: 10;
+    right: 0px;
+    top: 0px;
+
+}
+
+#game_right_section {
+    height: 600px;
+    width: 320px;
+    position: absolute;
+    left: 960px;
+    top: 0px;
+    color: black;
+    z-index: 1;
+}
+
+#scoreword, #danger, #level {
+  text-align:center;
+  font-size: 60px;
+}
+
+#score_num, #danger_num, #level_num {
+  text-align: center;
+  font-size: 40px;
+  color: darkblue;
+}
+
+#player {
+  position: absolute;
+  width: 62px;
+  left: 600px;
+  top: 300px;
+  z-index: 9;
+}
+
+.curAstroid {
+  position: absolute;
+  height: 42px;
+  width: 42px;
+  z-index: 9;
+  right: 0px;
+  top: 0px;
+}
+
+.curAstroid img{
+  position: relative;
+  z-index: 10;
+  height: 80px;
+  left: -17px;
+  top: -15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/* Add your styling here */
+
+#landing-page{
+  text-align: center;
+  background-image: url('../src/frontpage_background.jpg');
+  height: 100%;
+  
+
+}
+
+#landing-header{
+  width: 100%;
+  height: 100px;
+  background-color: darkslateblue;
+  border-bottom: 6px;
+  border-bottom-style: groove;
+  font-size: 100px;
+  color: white;
+  display:flex;
+  justify-content: space-between;
+
+}
+
+
+#landing-page button {
+  width: 200px;
+  height: 100px;
+  background-color: darkslateblue;
+  font-size: 40px;
+  margin-top: 100px;
+  color: white;
+  border:black 2px solid;
+
+}
+
+
+#landing-header img {
+  height:100%;
+
+}
+
+#settings {
+  width: 600px;
+  height: 690px;
+  top: 10px;
+  left: 340px;
+  position: absolute;
+  border: white 3px solid;
+  background-color: darkslateblue;
+
+  text-align: center;
+  color: white;
+  font-size: 50px;
+
+;
+  
+}
+
+#mySlider{
+  position: absolute;
+  top: 25%;
+  left:0px;
+  width: 99%;
+  height: 25px;
+  
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  transition: opacity .2s;
+  
+}
+
+.slider ::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+
+
+
+#settings button{
+  width: 180px;
+  height: 100px;
+  background-color: purple;
+  font: 40px;
+  color: white;
+
+  display: flexbox;
+  /* border color f */
+}
+
+#difficulty{
+  position: absolute;
+  top: 270px;
+  left: 10px;
+}
+
+#easyButton{
+  border: black 2px solid;
+}
+#normalButton{
+  border: black 2px solid;
+  border-color: yellow;
+}
+#hardButton{
+  border: black 2px solid;
+}
+
+#close{
+  position: absolute;
+  top:75%;
+  left:35%;
+}
+
+/* Tutorial */
+
+#tutorial{
+  width: 100%;
+  height: 100%;
+  font-size: 50;
+  background-color: gainsboro;
+  position: absolute;
+  left:0;
+  top: 0;
+
+}
+
+#tutorial img{
+  width: 100px;
+  height: 100px;
+}
+
+
+
+#HTP{
+  width: 100%;
+  height: 200px;
+  top:0%;
+  background-color: gainsboro;
+  position: absolute;
+  text-align: center;
+  font-size: 75px;
+  
+  
+}
+#avoidAst{
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  top: 100px;
+  text-align: center;
+  background-color: gainsboro;
+
+}
+
+#tutor-shield{
+  position: absolute;
+  width: 100%;
+  top: 280px;
+  text-align: center;
+  background-color: gainsboro;
+  
+}
+
+
+#tutor-button{
+  position: absolute;
+  width: 100%;
+  height:240px;
+  top: 580px;
+  left:540px;
+}
+#tutorial button{
+  width:200px;
+  height:75px;
+}
+
+#tutor-ast{
+  position:absolute;
+  top:70px;
+  left:590px;
+}
+/* get ready page */
+
+#getReadyPage{
+  
+  position: absolute;
+  left: 300px;
+  width: 600px;
+  height: 690px;
+  text-align: center;
+  color: black;
+  font-size: 50px;
+  
+}
+
+#getReady{
+  font-size: 75px;
+}
+
+#getReadyContainer{
+  margin-top: 230px;
+}
+
+
+/* portal */
+#portal img{
+  height: 62px;
+  width: 62px;
+}
+#portal{
+  position: absolute;
+  left:50px;
+  top:50px;
+}
+/* shield */
+#shield img{
+  height: 62px;
+  width: 62px;
+}
+#shield{
+  position: absolute;
+  left:50px;
+  top:50px;
+}
+
+
+
+
+
+/* end game  page */
+
+#endPage{
+
+  text-align: center;
+  background-image: url('../src/frontpage_background.jpg');
+  height: 100%;
+  
+  
+
+}
+
+#endHeader{
+  width: 1280px;
+  height: 100px;
+  background-color: darkslateblue;
+  border-bottom: 6px;
+  border-bottom-style: groove;
+  font-size: 100px;
+  color: white;
+  display:flex;
+  justify-content: space-between;
+  top:12px;
+  position: absolute;
+  
+}
+
+#endPageContainer{
+  width: 500px;
+  height:200px;
+  top: 310px;
+  left: 390px;
+  position: absolute;
+
+  background-color: darkslateblue;
+
+  text-align: center;
+  color: white;
+  font-size: 22px;
+
+}
+
+#endPageButton{
+  position:absolute;
+  left: 177px;
+  top:150px;
+}
