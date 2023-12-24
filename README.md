@@ -35,7 +35,7 @@ To play AstroAvert, follow these steps:
 Contributions to AstroAvert are welcome! Feel free to fork the repository, make changes, and submit pull requests. For major changes, please open an issue first to discuss what you would like to change.
 
 ## Support
-For support, email fakeemail@provider.com or join our Slack channel.
+For support, email Zixiong Luo
 
 ## License
 AstroAvert is released under the MIT License. See the `LICENSE` file for more details.
